@@ -21,7 +21,7 @@ SAMPLE_RATE = 16000
 CHANNELS = 1
 BLOCK_DURATION_S = 0.1
 BLOCK_SIZE = int(SAMPLE_RATE * BLOCK_DURATION_S)
-MODEL_SIZE = "tiny"
+MODEL_SIZE = "base"
 TOGGLE_SCAN_CODES = (82, 88)
 DEBOUNCE_S = 0.3
 MIN_AUDIO_S = 0.3
@@ -150,7 +150,7 @@ def stop_recording_and_type():
             segments, info = model.transcribe(
                 audio,
                 language=None,
-                beam_size=1,
+                beam_size=3,
                 vad_filter=True,
             )
             log(f"lang={info.language} prob={info.language_probability:.2f}")

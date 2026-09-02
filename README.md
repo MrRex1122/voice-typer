@@ -1,11 +1,11 @@
 # Voice Typer
 
-Local voice dictation into the active window using faster-whisper (Whisper `tiny`). No cloud, no telemetry.
+Local voice dictation into the active window using faster-whisper (Whisper `base`). No cloud, no telemetry.
 
 ## Features
 
 - F12 or Numpad 0 as toggle hotkey (both blocked at the OS level so they do not leak into the focused app)
-- Local inference with faster-whisper `tiny` (~75 MB download on first run)
+- Local inference with faster-whisper `base` (~140 MB download on first run)
 - Auto-selects the Ugreen microphone by name, falls back to the default input device
 - System tray icon: enable, autostart on Windows login, quit
 - Audio feedback: high beep on record start, low beep on record stop
@@ -26,7 +26,7 @@ Double-click `run.bat` (or run it from cmd). It will:
 2. Install dependencies from `requirements.txt`
 3. Launch the app with `pythonw.exe` (no console window)
 
-The first run downloads the `tiny` Whisper model (~75 MB) into the Hugging Face cache.
+The first run downloads the `base` Whisper model (~140 MB) into the Hugging Face cache.
 
 ## Usage
 
