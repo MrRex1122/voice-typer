@@ -1,0 +1,6 @@
+.venv/
+__pycache__/
+*.pyc
+.voice_typer.lock
+diagnose.log
+diagnose.err
