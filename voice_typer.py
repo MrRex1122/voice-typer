@@ -306,16 +306,16 @@ def on_quit(_icon, _item):
 def build_menu():
     return Menu(
         MenuItem(
-            "Включен",
+            "Enabled",
             on_toggle_enabled,
             checked=lambda _item: state["enabled"],
         ),
         MenuItem(
-            "Автозапуск (Windows)",
+            "Autostart (Windows)",
             on_toggle_autostart,
             checked=lambda _item: is_autostart_enabled(),
         ),
-        MenuItem("Выход", on_quit),
+        MenuItem("Quit", on_quit),
     )
 
 
